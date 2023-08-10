@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class=" text-center grid grid-cols-1 place-items-center">
+      <div  class=" my-6 text-3xl font-semibold text-white">
+        <h1>Snake Jumbo</h1>
+      </div>
+
+    <div class="score-page">
+   
+    </div>
+    <div class="Press mb-8">
+      <p class=" text-[#FF006E]">Press Start Game to Play</p>
+    </div>
+    <div class=" grid grid-cols-1 place-items-center gap-6">
+      <div id ='instruction'>
+          <h2>How to Play?</h2>
+          <ul class="text-white">
+            <li>1- Press the start Button</li>
+            <li>2- Use Arror keys to move the Snake</li>
+            <li>3- Each time you eat the item your score will be +10</li>
+          </ul>
+      </div>
+      <div id="game-container">
+        <!-- Game grid will be dynamically generated here -->
+      </div>
+    </div>
+      <div id="game-over-popup">
+        <h2>Game Over</h2>
+        <p>Your Score: <span id="score">0</span></p>
+        <button id="restart-button">Restart</button>
+      </div>
+      <div class=" mt-4 bg-white rounded-lg">
+      <button class="start-button rounded-lg h-12 bg-transparent"> <span class="mx-4 my-4">Start Game</span></button>
+      </div
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    
+  </body>
+</html>

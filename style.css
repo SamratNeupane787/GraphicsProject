@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2c3e50;
+    font-family: Arial, sans-serif;
+  }
+  #game-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #34495e;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2c3e50;
+    box-sizing: border-box;
+    position: absolute;
+  }
+  .snake {
+    background-color: #2ecc71;
+    border-radius: 50%;
+  }
+
+  .food {
+    background-color: #e74c3c;
+    border-radius: 50%;
+  }
+  #game-over-popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #eb5252;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+  }
+  h2 {
+    color: #e74c3c;
+  }
+  #score {
+    color: #fbfbfb;
+    font-weight: bold;
+  }
+  #restart-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  @keyframes scaleAnimation {
+    0%, 100% {
+      transform: scale(1); 
+    }
+    50% {
+      transform: scale(2); 
+    }
+  }
+  
+  .Press {
+    animation: scaleAnimation 3s infinite; 
+  }
+  
